@@ -17,9 +17,9 @@ cleanerCombat:
   knockbackSwordsEnabled: true # should knockback swords work?
   sounds:
     weak: false
-    strong: false
-    knockback: false
-    crit: false
+    strong: true
+    knockback: true
+    crit: true
   knockbackLevelMultiplier: 0.6 # a constant to control the knockback sword level
   sprintMultiplier: # modifies knockback if the attacker is sprinting.
     x: 2.3
