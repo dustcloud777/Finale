@@ -427,8 +427,8 @@ public class ConfigParser {
 
 	private KnockbackConfig parseKnockbackConfig(ConfigurationSection config, String name, KnockbackConfig def) {
 		KnockbackModifier ground = parseKnockbackModifier(config, name + ".groundModifier", def.getGroundModifier());
-		KnockbackModifier air = parseKnockbackModifier(config, name + ".airModifier", def.getGroundModifier());
-		KnockbackModifier water = parseKnockbackModifier(config, name + ".waterModifier", def.getGroundModifier());
+		KnockbackModifier air = parseKnockbackModifier(config, name + ".airModifier", def.getAirModifier());
+		KnockbackModifier water = parseKnockbackModifier(config, name + ".waterModifier", def.getWaterModifier());
 		return new KnockbackConfig(ground, air, water);
 	}
 
