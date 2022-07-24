@@ -425,7 +425,7 @@ public class ConfigParser {
 				knockbackLevelMultiplier, normalConfig, sprintConfig, victimMotion, maxVictimMotion, attackerMotion);
 	}
 
-	private KnockbackConfig parseKnockbackConfig(ConfigurationSection config, String name, KnockbackConfig def) {
+	private KnockbackConfig parseKnockbackConfig(ConfigurationSection config, String name, KnockbackModifier defaultModifier) {
 		KnockbackModifier ground = parseKnockbackModifier(config, name + ".groundModifier", def.getGroundModifier());
 		KnockbackModifier air = parseKnockbackModifier(config, name + ".airModifier", def.getAirModifier());
 		KnockbackModifier water = parseKnockbackModifier(config, name + ".waterModifier", def.getWaterModifier());
